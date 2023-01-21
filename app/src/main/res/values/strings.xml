@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Diseño de Mezcla</string>
+    <string name="Ok">Ok</string>
+    <string name="kgcm3">kg/cm3</string>
+    <string name="kgcm2">kg/cm2</string>
+    <string name="kg">kg</string>
+    <string name="titulo_activity_2">Proceso de Dosificación</string>
+    <string name="titulo_activity_tablas">Tablas de Diseño</string>
+</resources>

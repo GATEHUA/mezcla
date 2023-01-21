@@ -1,0 +1,1217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pantalla_inicial"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo1"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                android:id="@+id/titulo_general"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-1mm"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="17dp"
+                android:text="ACI 211 Y RNE E.060"/>
+
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="-1mm"
+                android:background="#FFFFFF" />
+
+
+            <TextView
+                android:id="@+id/datos_de_la_obra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Datos de la obra"
+                android:layout_marginBottom="-1mm"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+
+                android:textColor="#ffffff"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:padding="20dp"
+                android:background="@drawable/borde_cuadrado"
+                >
+
+                <TextView
+                    android:id="@+id/cliente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:textColor="@color/primaryTextColor"
+                    android:text=" Solicitante:" />
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/input_cliente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nombre y Apellidos"
+                    android:textStyle="bold"
+                    android:textColorHint="@color/hint"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/primaryTextColor"/>
+
+                <TextView
+                    android:id="@+id/obra"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:text="Obra:"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/primaryTextColor" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/input_obra"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:textColorHint="@color/hint"
+                    android:hint="Nombre de la obra"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="16dp"
+                    android:textColor="@color/primaryTextColor"  />
+                <TextView
+                    android:id="@+id/ubicacion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:text="Ubicación:"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/primaryTextColor" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/input_ubicacion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="1dp"
+                    android:hint="Ubicación de la obra"
+                    android:layout_weight="1"
+                    android:textColorHint="@color/hint"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/primaryTextColor"  />
+
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/titulo_prop_materiales"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="-1mm"
+                android:gravity="center"
+                android:text="Propiedades de los Materiales"
+                android:textColor="#ffffff"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/cemento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cemento"
+                android:layout_marginBottom="-1mm"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+
+                android:textColor="#ffffff"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="20dp"
+                android:padding="20dp"
+                android:background="@drawable/border"
+
+                >
+
+                <TextView
+                    android:id="@+id/marca"
+                    android:layout_width="196dp"
+                    android:layout_height="wrap_content"
+                    android:text="- Marca"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spinner_select_marca"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    app:backgroundTint="#ffffff"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:textColor="@android:color/white"
+
+                    />
+
+                <TextView
+                    android:id="@+id/pesoespecifico"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:autoSizeTextType="uniform"
+                    android:text="- Peso Específico(kg/cm3)"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inputpeso_especifico_cemento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="kg/cm3"
+                    android:textSize="@dimen/textoimput"
+                    android:textColorHint="@color/hint"
+                    android:textStyle="bold"
+                    android:inputType="numberDecimal"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/primaryTextColor"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"/>
+
+                <TextView
+                    android:id="@+id/tipo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/primaryTextColor"
+                    android:textStyle="bold"
+                    android:text="- Tipo"
+                    android:textSize="15dp"
+                    />
+                <EditText
+                    android:id="@+id/inputtipo_cemento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:textColorHint="@color/hint"
+
+                    android:textSize="@dimen/textoimput"
+                    android:hint="Ingrese Tipo"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/primaryTextColor"
+                    />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/agregadofino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-1mm"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Agregado Fino"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:textColor="#ffffff"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="20dp"
+                android:padding="20dp"
+                android:background="@drawable/border"
+                >
+
+                <TextView
+                    android:id="@+id/peso_especifico_agregadofino"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:textColor="@color/primaryTextColor"
+                    android:text="- Peso Específico" />
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inputpeso_especifico_a_f"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="kg/m3"
+                        android:textSize="@dimen/textoimput"
+                        android:textColorHint="@color/hint"
+                        android:textStyle="bold"
+                        android:inputType="numberDecimal"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/primaryTextColor"/>
+
+
+                <TextView
+                    android:id="@+id/peso_unitario_suelto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:text="- Peso unitario Suelto"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/primaryTextColor" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inputapeso_unitario_suelto_agregado_fino"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/textoimput"
+                        android:hint="kg/m3"
+                        android:textColorHint="@color/hint"
+                        android:textStyle="bold"
+
+                        android:inputType="numberDecimal"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/primaryTextColor"  />
+
+                     <TextView
+                    android:id="@+id/peso_unitario_compactado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:text="- Peso Unitario Compactado"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/primaryTextColor" />
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inputpe_unitario_compactado"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:hint="kg/m3"
+                        android:textSize="@dimen/textoimput"
+                        android:textColorHint="@color/hint"
+                        android:textStyle="bold"
+                        android:inputType="numberDecimal"
+
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/primaryTextColor"  />
+
+                <TextView
+                    android:id="@+id/absorcion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:text="- Absorción"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/primaryTextColor" />
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inputabsorcion_ag_fino"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:hint="A%"
+                        android:textSize="@dimen/textoimput"
+                        android:textColorHint="@color/hint"
+                        android:textStyle="bold"
+                        android:inputType="numberDecimal"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/primaryTextColor"  />
+
+                    <TextView
+                        android:id="@+id/contenido_humedad"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/primaryTextColor"
+                        android:text="- Humedad Natural" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inputhumedad_natural_a_F"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:hint="H%"
+                        android:textSize="@dimen/textoimput"
+                        android:textColorHint="@color/hint"
+                        android:textStyle="bold"
+                        android:inputType="numberDecimal"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/primaryTextColor"  />
+
+                    <TextView
+                        android:id="@+id/modulo_finura"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:layout_marginTop="10dp"
+                        android:text="- Modulo de Fineza (MF)"
+                        android:textColor="@color/primaryTextColor" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inputmodulo_finura_a_f"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/textoimput"
+                        android:inputType="numberDecimal"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/primaryTextColor"  />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/agregado_grueso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-1mm"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Agregado Grueso"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="16dp"
+
+                android:textColor="#ffffff"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="20dp"
+                android:padding="20dp"
+                android:background="@drawable/border"
+                >
+
+                <TextView
+                    android:id="@+id/peso_especifico_masa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:text="- Peso Específico"
+                    android:textColor="@color/primaryTextColor" />
+
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inputpeso_especifico_agregado_grueso"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:hint="kg/m3"
+                        android:textSize="@dimen/textoimput"
+                        android:textColorHint="@color/hint"
+                        android:inputType="numberDecimal"
+                        android:textStyle="bold"
+
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/primaryTextColor"  />
+
+
+                <TextView
+                    android:id="@+id/peso_unitario_suelto_agrgado_grueso"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="- Peso Unitario Suelto"
+                    android:textColor="@color/primaryTextColor"  />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inputapeso_unitario_suelto_agregado_grueso"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:hint="kg/m3"
+                        android:textSize="@dimen/textoimput"
+                        android:textColorHint="@color/hint"
+                        android:inputType="numberDecimal"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/primaryTextColor"  />
+
+                <TextView
+                    android:id="@+id/peso_unitario_compactado_agregado_grueso"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:textSize="15dp"
+                    android:text="- Peso Unitario Compactado"
+                    android:textColor="@color/primaryTextColor"  />
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inputpe_unitario_compactado_agregado_grueso"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:hint="kg/m3"
+                        android:textSize="@dimen/textoimput"
+                        android:textColorHint="@color/hint"
+                        android:inputType="numberDecimal"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/primaryTextColor"/>
+
+                <TextView
+                    android:id="@+id/peso_especifico_agregadogrueso"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/primaryTextColor"
+                    android:text="- Absorción" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inputpabsorcion_agregado_grueso"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:hint="A%"
+                        android:textSize="@dimen/textoimput"
+                        android:textColorHint="@color/hint"
+                        android:inputType="numberDecimal"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/primaryTextColor"/>
+
+
+                <TextView
+                    android:id="@+id/humendad_natural"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/primaryTextColor"
+                    android:text="- Humedad Natural" />
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inputhumedad_natural_agregado_grueso"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:hint="H%"
+                        android:textSize="@dimen/textoimput"
+                        android:textColorHint="@color/hint"
+                        android:inputType="numberDecimal"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/primaryTextColor"/>
+
+
+                <TextView
+                    android:id="@+id/modulo_finura_agregado_grueso"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="- Modulo de Fineza (MF)"
+                    android:textColor="@color/primaryTextColor"  />
+
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inputmodulo_finura_agregagdo_grueso"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:inputType="numberDecimal"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="@dimen/textoimput"
+                        android:textColor="@color/primaryTextColor"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/TextAgua"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-1mm"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Agua"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:gravity="center"
+
+                android:textColor="#ffffff" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="20dp"
+            android:padding="20dp"
+            android:background="@drawable/border"
+            >
+            <TextView
+                android:id="@+id/fuente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="- Fuente"
+                android:textStyle="bold"
+                android:textSize="15dp"
+
+                android:textColor="@color/primaryTextColor" />
+
+            <Spinner
+                android:id="@+id/spinner_agua"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                app:backgroundTint="#ffffff"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:layout_marginLeft="10dp"
+                android:textColor="#ffffff"/>
+            <TextView
+                android:id="@+id/peso_especifico_agua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:textSize="15dp"
+                android:text="- Peso Específico"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/primaryTextColor" />
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inputpeso_especifico_agua"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:inputType="numberDecimal"
+                    android:hint="kg/m3"
+                    android:textSize="@dimen/textoimput"
+                    android:textColorHint="@color/hint"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@color/primaryTextColor"/>
+        </LinearLayout>
+            <TextView
+                android:id="@+id/Aditivo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-1mm"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Aditivo"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:gravity="center"
+
+                android:textColor="#ffffff"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="20dp"
+                android:padding="20dp"
+                android:background="@drawable/border"
+                >
+
+                <TextView
+                    android:id="@+id/aditivo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:textSize="15dp"
+                    android:text="- Se Usará Aditivo"
+                    android:textStyle="bold"
+                    android:textColor="@color/primaryTextColor" />
+
+                <Spinner
+                    android:id="@+id/spinner_uso_aditivo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    app:backgroundTint="#ffffff"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#ffffff"/>
+
+                <TextView
+                    android:id="@+id/uso_aditivo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:text="- Marca"
+                    android:textColor="@color/primaryTextColor"/>
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inputmarca_aditivo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:hint="Ingrese la marca"
+                        android:textSize="@dimen/textoimput"
+                        android:textColorHint="@color/hint"
+                        android:inputType="text"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/primaryTextColor"/>
+
+                <TextView
+                    android:id="@+id/tipo_aditivo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:text="- Tipo"
+                    android:textColor="@color/primaryTextColor"/>
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inputtipo_aditivo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:hint="Ingrese el tipo"
+                        android:textSize="@dimen/textoimput"
+                        android:textColorHint="@color/hint"
+                        android:inputType="text"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/primaryTextColor"/>
+
+                <TextView
+                    android:id="@+id/dosis_aditivo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:text="- Dosis"
+                    android:textColor="@color/primaryTextColor" />
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inputdosis_aditivo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/textoimput"
+                        android:hint="ml X bls de cemento"
+                        android:textColorHint="@color/hint"
+                        android:inputType="numberDecimal"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/primaryTextColor"/>
+
+                <TextView
+                    android:id="@+id/densidad_aditivo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:text="- Densidad"
+                    android:textColor="@color/primaryTextColor"/>
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inputdensidad_aditivo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:hint="kg/l"
+                        android:textSize="@dimen/textoimput"
+                        android:textColorHint="@color/hint"
+                        android:inputType="numberDecimal"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/primaryTextColor"/>
+            </LinearLayout>
+            <!--    <View
+                android:layout_height="2dip"
+                android:background="#000000" />
+                -->
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-1mm"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#ffffff"
+
+                android:textSize="17dp"
+                android:text="Requisítos Del Diseño" />
+           <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="-1mm"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="20dp"
+            android:padding="20dp"
+            android:background="@drawable/border"
+            >
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="@color/primaryTextColor"
+                android:text="- Resistencia del Diseño" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inputresistencia_del_diseño"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:inputType="numberDecimal"
+                    android:hint="kg/cm2"
+                    android:textSize="@dimen/textoimput"
+                    android:textColorHint="@color/hint"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/primaryTextColor"/>
+
+
+            <TextView
+                android:id="@+id/resistencia_del_diseño"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="@color/primaryTextColor"
+                android:text="- Nº de Ensayos Previos Realizados" />
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inputnumerode_ensayos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:textStyle="bold"
+                    android:hint="N° De Ensayos"
+                    android:textSize="@dimen/textoimput"
+                    android:textColorHint="@color/hint"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/primaryTextColor"/>
+            <!--- <Spinner
+                 android:id="@+id/spinner_ensayos_previos"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:layout_weight="1" />
+                 -->
+            <TextView
+                android:id="@+id/desviacionestandar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="@color/primaryTextColor"
+                android:text="- Desviación Estándar" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inpudesviacion_estandar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:textStyle="bold"
+                    android:hint="Kg/cm2"
+                    android:textSize="@dimen/textoimput"
+                    android:textColorHint="@color/hint"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/primaryTextColor"/>
+            <TextView
+                android:id="@+id/textView40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:textSize="15dp"
+                android:text="- Tipo De Diseño"
+                android:paddingLeft="10dp"
+                android:textColor="@color/primaryTextColor"/>
+
+            <Spinner
+                android:id="@+id/spinner_tipo_de_diseño"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="10dp"
+                app:backgroundTint="#ffffff"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:layout_weight="1" />
+
+
+            <TextView
+                android:id="@+id/textView42"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="@color/primaryTextColor"
+                android:text="- Asentamiento" />
+
+            <Spinner
+                android:id="@+id/spinner_asentamiento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="10dp"
+                app:backgroundTint="#ffffff"
+                android:ellipsize="marquee"
+                android:singleLine="true"/>
+
+
+
+            <TextView
+                android:id="@+id/tipo_de_estructura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="@color/primaryTextColor"
+                android:text="- Especifíque tipo de estructura" />
+
+            <Spinner
+                android:id="@+id/spinner_tipo_de_estructura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                app:backgroundTint="#ffffff"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:paddingLeft="10dp" />
+
+
+
+            <TextView
+                android:id="@+id/asentamiento_preferencia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="@color/primaryTextColor"
+                android:text="- Asentamiento De Preferencia   " />
+
+            <TextView
+                android:id="@+id/viewasentamiento_de_preferencia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="kg/cm3"
+                android:textSize="@dimen/textoimput"
+                android:textColorHint="@color/hint"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="10dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff" />
+
+
+
+            <TextView
+                android:id="@+id/textView45"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/primaryTextColor"
+                android:text="- Consolidación Por Vibración   " />
+
+            <Spinner
+                android:id="@+id/spinner_consolidacion_por_vibracion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                app:backgroundTint="#ffffff"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/tamaño_max_del_agregado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="@color/primaryTextColor"
+                android:text="- Tamaño Maximo del Agregado" />
+
+            <Spinner
+                android:id="@+id/spinner_tamaño_max_del_agregado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                app:backgroundTint="#ffffff"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/tipo_de_exposicion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="@color/primaryTextColor"
+                android:text="- Tipo De Exposición" />
+
+            <Spinner
+                android:id="@+id/spinner_tipo_de_exposicion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                app:backgroundTint="#ffffff"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/tipo_de_exposicion_especifique"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="@color/primaryTextColor"
+                android:text="- Especifíque" />
+
+            <Spinner
+                android:id="@+id/spinner_tipo_de_exposicion_especifique"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                app:backgroundTint="#ffffff"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:paddingLeft="10dp"/>
+        </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView36"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-1mm"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+
+                android:textSize="17dp"
+                android:text="Mezcla Necesaria" />
+            <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="-1mm"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="20dp"
+            android:padding="20dp"
+            android:background="@drawable/border"
+            >
+            <TextView
+                android:id="@+id/text_mezcla_necesaria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="@color/primaryTextColor"
+                android:text="- Mezcla Necesaria" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inputmezcla_necesaria"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:hint="m3"
+                    android:textSize="@dimen/textoimput"
+                    android:textColorHint="@color/hint"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/primaryTextColor"/>
+        </LinearLayout>
+
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/proceso_dosificacion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="proceso_dosificacion"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:background="#292f54"
+                    android:layout_margin="20dp"
+                    android:text="Ir al Proceso De Dosificación"/>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

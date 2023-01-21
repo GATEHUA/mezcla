@@ -1,0 +1,2104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo1"
+    tools:context=".MainActivity2">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/para_imprimir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_margin="10dp"
+                android:gravity="left"
+                android:text="1. Determinación de la Resistencia Promedio
+                                 Norma E-060 de Concreto Armado"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/titulos_porceso_de_dosificacion"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/borde_cuadrado"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textresistencia_promedio"
+                        android:layout_width="@dimen/espacio_item_tipo_de_dato"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="- Resistencia  Promedio Especificada (kg/cm2) "
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="15dp"
+                         />
+
+                    <TextView
+                        android:id="@+id/viewresistenciapormedio_especificada"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_gravity="center"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/resistencia_del_diseño"
+                        android:layout_width="@dimen/espacio_item_tipo_de_dato"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="- Factor de Modificación de la SD "
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="15dp"
+                         />
+
+                    <TextView
+                        android:id="@+id/viewrfactor_de_modificacion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:textColor="#ffffff"
+                        android:layout_gravity="center"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/desviacionestandar"
+                        android:layout_width="@dimen/espacio_item_tipo_de_dato"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="- DS de la Constructora (kg/cm2)"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="15dp"
+                       />
+
+                    <TextView
+                        android:id="@+id/viewrdsde_la_constrtructora"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_gravity="center"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/view_1_4"
+                        android:layout_width="@dimen/espacio_item_tipo_de_dato"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="- Resistencia Promedio Modificado  (kg/cm2)"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="15dp"
+                         />
+
+                    <TextView
+                        android:id="@+id/viewresispromedio_modificado"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_gravity="center"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/view_5_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:text="Resistencia Promedio Requerida "
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/view_6_1"
+                        android:layout_width="@dimen/espacio_item_tipo_de_dato"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="- f'cr (kg/cm2)"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="15dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/viewresistencia_promedio_requerida"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tituloporceso_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_margin="10dp"
+                android:gravity="left"
+                android:text="2. Selección del Tamaño Máximo Nominal"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/titulos_porceso_de_dosificacion"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/borde_cuadrado"
+
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewTMN"
+                        android:layout_width="@dimen/espacio_item_tipo_de_dato"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="- TMN "
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="15dp"
+                         />
+
+                    <TextView
+                        android:id="@+id/viewseleccionde_TMM"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tituloporceso_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_margin="10dp"
+                android:gravity="left"
+
+                android:text="3. Selección de Asentamiento"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/titulos_porceso_de_dosificacion"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/borde_cuadrado"
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewasentamiento"
+                        android:layout_width="@dimen/espacio_item_tipo_de_dato"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="- Asentamiento  "
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/viewseleccionde_asentamiento"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tituloporceso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_margin="10dp"
+                android:gravity="left"
+                android:text="4. Volumen Unitario de Agua"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/titulos_porceso_de_dosificacion"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/borde_cuadrado"
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textavolumenunitarioagua"
+                        android:layout_width="@dimen/espacio_item_tipo_de_dato"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="- Volumen  "
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="15dp"
+                         />
+
+                    <TextView
+                        android:id="@+id/viewvalor_del_volumen_unitario_agua"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/titulocontenido_aire"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_margin="10dp"
+                android:gravity="left"
+                android:text="5. Contenido de Aire Atrapado"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/titulos_porceso_de_dosificacion"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/borde_cuadrado"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textaireatrapado"
+                        android:layout_width="@dimen/espacio_item_tipo_de_dato"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="- Porcentaje del Aire atrapado  "
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="15dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/viewvaireatrapado"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/titulorelacionaAC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_margin="10dp"
+                android:gravity="left"
+                android:text="6. Relacion Agua Cemento (28 días)"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/titulos_porceso_de_dosificacion"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/borde_cuadrado"
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textrelacionAC"
+                        android:layout_width="@dimen/espacio_item_tipo_de_dato"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="- Por Resistencia "
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="15dp"
+                       />
+
+                    <TextView
+                        android:id="@+id/viewvrelacionAC_fcr_por_resistencia"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textrelacionAC_durabilidad"
+                        android:layout_width="@dimen/espacio_item_tipo_de_dato"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="- Por Durabilidad "
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/viewvrelacionAC_fcr_por_durabilidad"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textrelacionAC_diseño"
+                        android:layout_width="@dimen/espacio_item_tipo_de_dato"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="- Relación a/c de Diseño"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/viewvrelacionAC_sde_diseño"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/titulofactor_cemento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_margin="10dp"
+                android:gravity="left"
+                android:text="7. Factor Cemento"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/titulos_porceso_de_dosificacion"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/borde_cuadrado"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textafactor_cemento"
+                        android:layout_width="@dimen/espacio_item_tipo_de_dato"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="- Factor Cemento (kg)  "
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/viewvafactor_cemento"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/bolsas"
+                        android:layout_width="@dimen/espacio_item_tipo_de_dato"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="- Bolsas (bls)  "
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/viewbolsas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/titulo_selec_agreg_grueso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_margin="10dp"
+                android:gravity="left"
+                android:text="8. Selección del Contenido del Agregado Grueso"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/titulos_porceso_de_dosificacion"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/borde_cuadrado"
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textfactor_cemento"
+                        android:layout_width="@dimen/espacio_item_tipo_de_dato"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="- TMN"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/viewTMNagreg_grue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/textvolumen_del_agregado_grueso"
+                        android:layout_width="@dimen/espacio_item_tipo_de_dato"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="- Volumen del Agregado Grueso"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/viewvvol_agregado_grueso"
+                        android:layout_width="match_parent"
+                        android:layout_height="21dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/peso_unitario_seco_y_compactado"
+                        android:layout_width="@dimen/espacio_item_tipo_de_dato"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="- Peso Unitario Compactado (kg/m3)"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/viewpeso_unitario_seco_y_compactado"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/cantidad_del_agregado_grueso"
+                        android:layout_width="@dimen/espacio_item_tipo_de_dato"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="- Cantidad de Agregado Grueso (kg)"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/viewcantidad_del_agregado_grueso"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/titulo9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_margin="10dp"
+                android:gravity="left"
+                android:text="9. Método de los Volumenes Absolutos"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/titulos_porceso_de_dosificacion"
+                android:textStyle="bold" />
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/borde_cuadrado"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textvalor_cemento"
+                        android:layout_width="@dimen/espacio_item_tipo_de_dato"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="- Cemento (m3)"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/viewcemento_paso9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textagua_paso9"
+                        android:layout_width="@dimen/espacio_item_tipo_de_dato"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="- Agua (m3)"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:id="@+id/viewagua_paso9"
+                        android:layout_width="match_parent"
+                        android:layout_height="21dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textaire_paso9"
+                        android:layout_width="@dimen/espacio_item_tipo_de_dato"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="- Aire (m3)"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/viewaire_paso9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/agregado_grueso_paso9"
+                        android:layout_width="@dimen/espacio_item_tipo_de_dato"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="- Agregado grueso (m3)"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/viewagregado_grueso_paso9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/otro-aditivo"
+                        android:layout_width="@dimen/espacio_item_tipo_de_dato"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="- Otro (aditivo) (m3) "
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/viewotro_aditivo_paso9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/suma"
+                        android:layout_width="@dimen/espacio_item_tipo_de_dato"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="- Suma "
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/viewsuma_paso9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/viewestado_paso9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/primaryTextColor"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/titulo_paso10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_margin="10dp"
+                android:gravity="left"
+                android:text="10. Cálculo del Volumen y Peso del Agregado Fino"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/titulos_porceso_de_dosificacion"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/borde_cuadrado"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/volumen_paso9"
+                        android:layout_width="@dimen/espacio_item_tipo_de_dato"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="- Volumen (m3)"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:id="@+id/viewvolumen_paso10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/peso_paso10"
+                        android:layout_width="@dimen/espacio_item_tipo_de_dato"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="- Peso (kg)"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/viewpeso_paso10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/titulo_paso11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_margin="10dp"
+                android:gravity="left"
+                android:text="11. Valores de Diseño en Estado Seco"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/titulos_porceso_de_dosificacion"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/borde_cuadrado"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textvalor_cemento_11"
+                        android:layout_width="@dimen/espacio_item_tipo_de_dato"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="- Cemento (kg)"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/viewcemento_paso11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textagua_paso11"
+                        android:layout_width="@dimen/espacio_item_tipo_de_dato"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="- Agua (lts)"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:id="@+id/viewagua_paso11"
+                        android:layout_width="match_parent"
+                        android:layout_height="21dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textaire_paso11"
+                        android:layout_width="@dimen/espacio_item_tipo_de_dato"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="- Aire (%)"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:id="@+id/viewaire_paso11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/agregado_fino_paso11"
+                        android:layout_width="@dimen/espacio_item_tipo_de_dato"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="- Agregado fino(kg) "
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/viewagregado_fino_paso11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/agregado_grueso_paso11"
+                        android:layout_width="@dimen/espacio_item_tipo_de_dato"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="- Agregado grueso (kg)"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:id="@+id/viewagregado_grueso_paso11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/otro-aditivo_11"
+                        android:layout_width="@dimen/espacio_item_tipo_de_dato"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="- Otro (aditivo) (lts) "
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:id="@+id/viewotro_aditivo_paso11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/titulo_paso12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_margin="10dp"
+                android:gravity="left"
+                android:text="12. Corrección por Humedad del Agregado "
+                android:textColor="#ffffff"
+                android:textSize="@dimen/titulos_porceso_de_dosificacion"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/borde_cuadrado"
+                >
+
+                <TextView
+                    android:id="@+id/titulo_paso_12.1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Peso de agregados húmedos"
+                    android:textColor="@color/primaryTextColor"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/a_f_paso12"
+                        android:layout_width="@dimen/espacio_item_tipo_de_dato"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="- Agregado Fino (kg)"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:id="@+id/viewa_f_paso12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/text_a_g_paso12"
+                        android:layout_width="@dimen/espacio_item_tipo_de_dato"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="- Agregado Grueso (kg)"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/view_a_g_paso12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/titulo_paso_12.2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Humedad Superficial"
+                    android:textColor="@color/primaryTextColor"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/a_f_paso12.2"
+                        android:layout_width="@dimen/espacio_item_tipo_de_dato"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="- Agregado Fino (%)"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:id="@+id/viewa_f_paso12_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/text_a_g_paso12.2"
+                        android:layout_width="@dimen/espacio_item_tipo_de_dato"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="- Agregado Grueso (%)"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/view_a_g_paso12_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/titulo_paso_12.3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Aportes de Humedad"
+                    android:textColor="@color/primaryTextColor"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/a_f_paso12.3"
+                        android:layout_width="@dimen/espacio_item_tipo_de_dato"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="- Agregado Fino (lts)"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:id="@+id/viewa_f_paso12_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/text_a_g_paso12.3"
+                        android:layout_width="@dimen/espacio_item_tipo_de_dato"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="- Agregado Grueso (lts)"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:id="@+id/view_a_g_paso12_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/text_correccion_de_agua"
+                        android:layout_width="@dimen/espacio_item_tipo_de_dato"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="- Corrección de Agua (lts)"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/view_correccion_de_agua"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/text_agua_efectiva"
+                        android:layout_width="@dimen/espacio_item_tipo_de_dato"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="- Agua Efectiva (lts)"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/view_agua_efectiva"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/titulo_paso_12.4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="valores Corregidos por Humedad"
+                    android:textColor="@color/primaryTextColor"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/a_cemento_paso12.4"
+                        android:layout_width="@dimen/espacio_item_tipo_de_dato"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="- Cemento (kg)"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:id="@+id/view_cemento_paso12_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/a_agua_paso12.4"
+                        android:layout_width="@dimen/espacio_item_tipo_de_dato"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="- Agua (lts)"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:id="@+id/viewa_agua_paso12_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/a_aire_paso12.4"
+                        android:layout_width="@dimen/espacio_item_tipo_de_dato"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="- Aire (%)"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:id="@+id/viewa_aire_paso12_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/a_aditivo_paso12.4"
+                        android:layout_width="@dimen/espacio_item_tipo_de_dato"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="- Aditivo (lts)"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:id="@+id/viewaditivo_paso12_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/a_g_paso12.4"
+                        android:layout_width="@dimen/espacio_item_tipo_de_dato"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="- Agregado Grueso (kg)"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/view_a_g_paso12_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/a_f_paso12.4"
+                        android:layout_width="@dimen/espacio_item_tipo_de_dato"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="- Agregado Fino (kg)"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:id="@+id/view_a_f_paso12_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/titulo_paso13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_margin="10dp"
+                android:gravity="left"
+                android:text="13. Valores del Diseño en Proporción de Peso"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/titulos_porceso_de_dosificacion"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/borde_cuadrado"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textvalor_cemento_13"
+                        android:layout_width="@dimen/espacio_item_tipo_de_dato"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="- Cemento"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:id="@+id/viewcemento_paso13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/texta_f_paso13"
+                        android:layout_width="@dimen/espacio_item_tipo_de_dato"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="- Agregado Fino "
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:id="@+id/viewa_f_paso13"
+                        android:layout_width="match_parent"
+                        android:layout_height="21dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/text_a_g_paso13"
+                        android:layout_width="@dimen/espacio_item_tipo_de_dato"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="- Agregado Grueso "
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:id="@+id/view_a_g_paso13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/agua_paso13"
+                        android:layout_width="@dimen/espacio_item_tipo_de_dato"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="- Agua "
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/view_agua_paso13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/aditivo_paso13"
+                        android:layout_width="@dimen/espacio_item_tipo_de_dato"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="- Aditivo "
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:id="@+id/view_aditivo_paso13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/titulo_paso14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_margin="10dp"
+                android:gravity="left"
+                android:text="14. Valores del diseño en peso por tanda  de una bolsa"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/titulos_porceso_de_dosificacion"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/borde_cuadrado"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textvalor_cemento_14"
+                        android:layout_width="@dimen/espacio_item_tipo_de_dato"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="- Cemento (kg)"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:id="@+id/viewcemento_paso14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/texta_f_paso14"
+                        android:layout_width="@dimen/espacio_item_tipo_de_dato"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="- Agregado Fino (kg)"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:id="@+id/viewa_f_paso14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/text_a_g_paso14"
+                        android:layout_width="@dimen/espacio_item_tipo_de_dato"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="- Agregado Grueso (kg)"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:id="@+id/view_a_g_paso14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/agua_paso14"
+                        android:layout_width="@dimen/espacio_item_tipo_de_dato"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="- Agua (lts)"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:id="@+id/view_agua_paso14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/aditivo_paso14"
+                        android:layout_width="@dimen/espacio_item_tipo_de_dato"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="- Aditivo (lts)"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:id="@+id/view_aditivo_paso14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/titulo_paso15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_margin="10dp"
+                android:gravity="left"
+                android:text="15. Dosificación en Obra"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/titulos_porceso_de_dosificacion"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/borde_cuadrado"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textvalor_mezcla_necesaria"
+                        android:layout_width="@dimen/espacio_item_tipo_de_dato"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="- Mezcla Necesaria (m3)"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:id="@+id/view_mezcla_necearia_paso15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textvalor_cemento_15"
+                        android:layout_width="@dimen/espacio_item_tipo_de_dato"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="- Cemento (m3)"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:id="@+id/viewcemento_paso15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/texta_f_paso15"
+                        android:layout_width="@dimen/espacio_item_tipo_de_dato"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="- Agregado Fino (m3)"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:id="@+id/viewa_f_paso15"
+                        android:layout_width="match_parent"
+                        android:layout_height="21dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/text_a_g_paso15"
+                        android:layout_width="@dimen/espacio_item_tipo_de_dato"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="- Agregado Grueso (m3)"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:id="@+id/view_a_g_paso15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/agua_paso15"
+                        android:layout_width="@dimen/espacio_item_tipo_de_dato"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="- Agua (m3)"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:id="@+id/view_agua_paso15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/ire_paso15"
+                        android:layout_width="@dimen/espacio_item_tipo_de_dato"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="- Aire (%)"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:id="@+id/view_aire_paso15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/aditivo_paso15"
+                        android:layout_width="@dimen/espacio_item_tipo_de_dato"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:text="- Aditivo (m3)"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:id="@+id/view_aditivo_paso15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/generar_pdf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="#3E4147"
+                android:gravity="center"
+                android:onClick="PDFView"
+                android:text="Generar PDF"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+    </ScrollView>
+    
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

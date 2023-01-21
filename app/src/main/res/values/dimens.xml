@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tamaño_ingresar">15dp</dimen>
+    <dimen name="titulos_porceso_de_dosificacion">15dp</dimen>
+    <dimen name="espacio_item_tipo_de_dato">250dp</dimen>
+    <dimen name="espacio_item_tipo_de_dato_paso7">200dp</dimen>
+    <dimen name="height_cardview">250dp</dimen>
+    <dimen name="cornerradius_cardview">4dp</dimen>
+    <dimen name="textoimput">15dp</dimen>
+</resources>

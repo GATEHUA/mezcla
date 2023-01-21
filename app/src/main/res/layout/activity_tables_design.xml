@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".tables_design">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/titulo_prop_materiales"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:text="TABLA 01\ \n MARCAS DEL CEMENTO"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/tabla_1">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/subtitulo_prop_materiales"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="10dp"
+                android:text="*Pesos específicos para distintos tipos de cemento\ \n
+*Fuente: fichas técnicas de empresas cementeras "/>
+
+            <TextView
+                android:id="@+id/titulo_tabla_02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:text="Tabla 02 \ \n VALORES PARA EL F´C CON DESV.ESTANDAR" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/tabla_2">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/subtitulo_tabla_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="10dp"
+                android:text="*f´c con desv. Estándar en función a ensayo de probetas
+\ \n*Fuente: Reglamento Nacional de Edificaciones  "/>
+
+            <TextView
+                android:id="@+id/titulo_tabla_03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="@drawable/borde_cuadrado"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:text="TABLA 03" />
+            <TextView
+                android:id="@+id/titulo_2_tabla_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="@drawable/borde_cuadrado"
+                android:textColor="#000000"
+                android:text="VALORES PARA EL F´C SIN DESV. ESTANDAR" >
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/tabla_3">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/subtitulo_tabla_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:text="*f´c cuando no se cuenta con desviación estándar\ \n
+*Fuente: Reglamento Nacional de Edificaciones"
+                android:textColor="#000000"
+                android:textSize="10dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/titulo_tabla_04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:text="TABLA 04" />
+            <TextView
+                android:id="@+id/titulo_04_tabla_04"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:text="FACTOR DE MODIFICACION PARA DS"/>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/tabla_4">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/subtitulo_tabla_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="10dp"
+                android:text="*El factor se usa cuando se tiene menos de 30 ensayos\ \n
+*Fuente: Reglamento Nacional de Edificaciones"/>
+
+            <TextView
+                android:id="@+id/titulo_tabla_06"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#000000"
+
+                android:textSize="15dp"
+                android:text="TABLA 05" />
+            <TextView
+                android:id="@+id/titulo_05_tabla_05"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:text="VALORES DE CONSISTENCIA"/>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/tabla_5">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/subtitulo_tabla_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="10dp"
+                android:text="*La consistencia está en función al slump\ \n*Fuente: Ing. Flavio Abanto Castillo"/>
+
+            <TextView
+            android:id="@+id/titulo_tabla_05"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:gravity="center"
+
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:text="TABLA 06" />
+            <TextView
+                android:id="@+id/titulo_06_tabla_06"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:text="ASENTAMIENTO DE CONCRETO CONSOLIDADOS POR VIBRACION" />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/tabla_6">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/subtitulo_tabla_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="10dp"
+                android:text="*Cuando se usa un método diferente a la vibración los valores de la tabla se pueden aumentar en 1\ \n
+*Fuente: Ing. Enrique Rivva López"/>
+
+            <TextView
+                android:id="@+id/titulo_tabla_07"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:text="TABLA 07" />
+            <TextView
+                android:id="@+id/titulo_07_tabla_07"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:text="VOLUMEN UNITARIO DEL AGUA" />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/tabla_7">
+            </ImageView>
+
+
+            <TextView
+                android:id="@+id/subtitulo_tabla_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="10dp"
+                android:text="*Agua en función de el asentamiento y el tamaño máximo nominal.\ \n
+*Fuente: Confeccionado por el Comité ACI 211, especificado en su normativa y en el ACI 318."/>
+
+            <TextView
+                android:id="@+id/titulo_tabla_08"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:text="TABLA 08" />
+            <TextView
+                android:id="@+id/titulo_08_tabla_08"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:text=" CONTENIDO DE AIRE ATRAPADO" />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/tabla_8">
+            </ImageView>
+
+
+            <TextView
+                android:id="@+id/subtitulo_tabla_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="10dp"
+                android:text="*Fuente: Comité ACI 211"/>
+
+            <TextView
+                android:id="@+id/titulo_tabla_09"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:text="TABLA 09" />
+            <TextView
+                android:id="@+id/titulo_09_tabla_09"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:text="CONTENIDO DE AIRE INCORPORADO Y TOTAL" />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/tabla_9">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/subtitulo_tabla_9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="10dp"
+                android:text="*Fuente: RNE-E060, solo la Exposición Moderada y Severa,
+pero la Suave se encuentra en el Comité ACI 211 Y ASTM
+C33."/>
+
+            <TextView
+                android:id="@+id/titulo_tabla_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:text="TABLA 10" />
+            <TextView
+                android:id="@+id/titulo_10_tabla_10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:text="RELACIÓN a/c POR RESISTENCIA" >
+            </TextView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/tabla_10">
+            </ImageView>
+            <TextView
+                android:id="@+id/subtitulo_tabla_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="10dp"
+                android:text="*Fuente: Comité ACI 211, relacionado con la Norma ASTM C31 \ \n"/>
+
+            <TextView
+                android:id="@+id/titulo_tabla_11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:text="TABLA 11" />
+            <TextView
+                android:id="@+id/titulo_2_tabla_11"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:text="PESO DEL AGREGADO GRUESO POR UNIDAD DE VOLUMEN DEL CONCRETO" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/tabla_11">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/subtitulo_tabla_11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="10dp"
+                android:text="*Fuente: Comité ACI 211 basada en las condiciones del ASTM C29(AASHTO T 19)"/>
+
+            <TextView
+                android:id="@+id/titulo_tabla_12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:text="TABLA 12"/>
+            <TextView
+                android:id="@+id/titulo_2_tabla_12"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:text="CONDICIONES ESPECIALES DE EXPOSICIÓN" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/tabla_12">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/subtitulo_tabla_12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="10dp"
+                android:text="*La resistencia f'c no deberá ser menor de 245 kg/cm2 por razones de durabilidad\ \n
+*Fuente: Comité ACI 211, basado en el ACI 201"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
